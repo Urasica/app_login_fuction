@@ -52,7 +52,7 @@ class   LoginService(private val context: Context) {
 
         if (token != null) {
             val request = Request.Builder()
-                .url("http://10.0.2.2:8080/auth/check-token")
+                .url("http://35.216.0.159:8080/auth/check-token")
                 .header("Authorization", "Bearer $token")
                 .get()
                 .build()
